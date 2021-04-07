@@ -1,4 +1,5 @@
 FROM tomcat:8-jre8
+ENV TZ=Asia/Seoul
 WORKDIR /usr/local/tomcat
 RUN rm -rf ./webapps/*
 COPY ./target/*.war ./webapps/ROOT.war
